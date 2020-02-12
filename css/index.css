@@ -1,31 +1,25 @@
 @font-face {
- font-family: "Brandon Grotesque";
- src: url("fonts/BrandonGrotesque-Regular.ttf")
-}
-
-.logo {
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-}
-.main-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-ul {
-    justify-content: center;
-}
-
-ul li a {
     font-family: 'Brandon Grotesque';
-    color: #db1a3f;
+    src: url('/fonts/BrandonGrotesque-Regular.eot');
+    src: local('/fonts/Brandon Grotesque Regular'), local('BrandonGrotesque-Regular'),
+        url('/fonts/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/BrandonGrotesque-Regular.woff') format('woff'),
+        url('/fonts/BrandonGrotesque-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-
-ul li a:hover {
-    color: #303030;
+.navbar-brand {
+    font-family: "Brandon Grotesque";
+    font-size: 35px;
 }
-
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+ul > li {
+    font-family: "Brandon Grotesque";
+    text-transform: uppercase;
+}
 .photogallery {
     display: flex;
     flex-direction: column;
@@ -34,8 +28,8 @@ ul li a:hover {
 
 .content-photo > img {
     height: auto;
-    max-width: 250px;
-    margin: 25px;
+    max-width: 290px;
+    margin: 5px;
 }
 .content-photo > img:hover {
     opacity: 0.5;
