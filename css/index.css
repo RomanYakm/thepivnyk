@@ -34,3 +34,88 @@ ul > li {
 .content-photo > img:hover {
     opacity: 0.5;
 }
+#secondary-info {
+    text-align: center;
+}
+.text-info {
+    display: inline-block;
+    text-align: center;
+    font-family: "Brandon Grotesque";
+    max-width: 300px;
+    padding: 5px;
+}
+#main-content {
+    margin: 15px 0 25px 0;
+}
+.text-info > p {
+    color: black;
+}
+.text-info > h2 {
+    color: black;
+    text-transform: uppercase;
+}
+.main-logo {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Brandon Grotesque";
+    text-transform: uppercase;
+}
+.main-logo > p {
+    padding: 5px;
+}
+hr {
+    width: 150px;
+    border: 1px solid black;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    margin: 0 auto;
+    font-family: "Brandon Grotesque";
+    text-transform: uppercase;
+}
+input {
+    margin: 10px;
+    width: 220px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+input[type=submit] {
+    margin: 15px;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    max-width: 250px;
+}
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+input[type=submit]:active {
+    outline: none;
+}
+textarea {
+    width: 220px;
+    resize: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.contact-me > h1 {
+    font-family: "Brandon Grotesque";
+    text-transform: uppercase;
+    text-align: center;
+}
+.contact-info {
+    text-align: center;
+    font-family: "Brandon Grotesque";
+    text-transform: uppercase;
+
+}
