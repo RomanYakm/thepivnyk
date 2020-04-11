@@ -45,13 +45,19 @@ ul > li {
     padding: 0 4px;
 }
 .photogallery {
-    flex: 33%;
+    display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.photogallery-column {
+    flex: 25%;
+    max-width: 25%;
     padding: 0 4px;
 }
-.photogallery > img {
+.photogallery-column  img {
     margin-top: 8px;
     vertical-align: middle;
-    max-width: 150px;
+    width: 100%;
 }
 .text-info > p {
     color: black;
@@ -93,7 +99,41 @@ hr {
     font-size: 20px;
     padding: 15px;
 }
+#contacts-info h4 {
+    font-size: 20px;
+    padding: 15px;
+}
 #contacts-info p {
     font-size: 15px;
     padding: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .photogallery-column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .photogallery-column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+@media (min-width: 750px) {
+    #contacts-info {
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-photo {
+        justify-content: flex-start;
+        align-self: flex-start;
+    }
+    }
+    .contacts-text {
+        flex: 1;
+        max-width: 350px;
+        margin: 25px;
+        text-align: left;
+    }
 }
